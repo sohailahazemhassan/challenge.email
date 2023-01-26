@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        function checkEmail(email){
+            // text@text.text{2,3}
+            let reg = /^[a-z_]\w*@[a-z]\w*\.[a-z]{2,3}$/;
+            if (email.match(reg) == null) {
+                return 'email not valid'
+            }
+            return 'email is valid'
+        }
+    </script>
+</body>
+</html>
